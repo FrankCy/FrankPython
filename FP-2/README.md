@@ -1,6 +1,6 @@
 # FP-2 第二章内容练习 #
 
-- F{_Array.py
+- FP_Array.py
 数组语法练习
 
 - FP_Listing_Python_Main.py
