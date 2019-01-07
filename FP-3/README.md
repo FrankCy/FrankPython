@@ -1,12 +1,12 @@
 # FP-3 第三章使用字符串 #
 
-- FP_Setting_String_Pattern.py
+- FP_Setting_String_Pattern.py <br/>
 设置字符串的格式 完整版
 
-- FP_String_Basic_Operation.py
+- FP_String_Basic_Operation.py <br/>
 字符串基本操作
 
-- FP_String_Method.py
+- FP_String_Method.py <br/>
 字符串方法
 
 
