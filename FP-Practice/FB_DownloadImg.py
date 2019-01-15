@@ -1,27 +1,26 @@
-import urllib3
+#coding = utf-8
+from urllib import request
 import re
 import chardet
 
 def getHtml(url):
-    http = urllib3.PoolManager() #type: urllib3.poolmanager.PoolManager
-    response = http.urlopen("", url) #type: urllib3.response.HTTPResponse
-    html = response.read() #type: bytes
-    print(html.__len__())
+    page = request.urlopen(url) # type: http.client.HTTPResponse
+    html = page.read()
     return html
 
 def getImg(html):
-    encode_type = chardet.detect(html) #type: dict
-    encode_type['encoding'] = 'utf-8'
+    encode_type = chardet.detect(html)  # type: dict
+    encode_type['encoding'] = 'gb2312'
     html = html.decode(encode_type['encoding'])
     reg = 'src="(.+?\.jpg)" alt='
-    imgre = re.compile(reg) #type: re.Pattern
+    imgre = re.compile(reg)  # type: re.Pattern
     imglist = re.findall(imgre, html, 0)
     x = 0
     for imgurl in imglist:
-        urllib3.urlretrieve(imgurl, '%s.jpg' % x)
+        request.urlretrieve(imgurl, '%s.jpg' % x)
         x+=1
     return imglist
 
-html = getHtml("http://pic.yxdown.com/list/0_0_1.html")
+html = getHtml("http://desk.zol.com.cn")
 
 print(getImg(html))

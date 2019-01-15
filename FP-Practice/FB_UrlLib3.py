@@ -12,3 +12,15 @@ print(response1.version)
 
 print("####### 方法2 #######")
 response2 = http.request('GET', url) # type: urllib3.response.HTTPResponse
+
+from urllib import parse
+# url转码操作，只有转码后浏览器才会识别该url
+kw = {'name': '中国'}
+res = parse.urlencode(kw)
+print(res)
+res2 = parse.unquote(res)
+print(res2)
+# 结果如下：
+# name=E5%B0%8F%E5%8F%AF
+# name=中国
+
