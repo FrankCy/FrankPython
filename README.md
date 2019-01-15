@@ -3,9 +3,10 @@
 ## 简介 ##
 | 目录 | 描述 |
 |:--|:--|
-| FP-1至FP-20（```持续更新```） | [Python基础教程（第三版）](http://item.jd.com/12279949.html) |
+| FP-1至FP-20（```持续更新中```） | [Python基础教程（第三版）](http://item.jd.com/12279949.html) |
 | FP-Practice | Python实战内容 |
 
+## 文件详解及博客地址 ##
 | 章节 | CSND标题 | CSDN地址 |
 |:--|:--|:--|
 | - | Python 简介 | https://blog.csdn.net/Cy_LightBule/article/details/85283699 |
