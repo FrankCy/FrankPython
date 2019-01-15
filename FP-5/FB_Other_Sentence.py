@@ -226,7 +226,7 @@ print([2, [1, 4]] < [2, [1, 5]])
 # age=-1
 # assert 0 < age < 100, '发生错误，请联系管理员'
 
-# 循环
+# -------------  循环 -------------
 ## while循环
 x=1
 while x <= 100:
@@ -358,7 +358,7 @@ for n in range(99, 81, -1):
 else:
     print("Didn't find it!")
 
-# 简单推导
+# ------------- 简单推导 -------------
 #打印100个由平方组成的数
 print([x * x for x in range(100)])
 #打印这100个由平方组成的数，能被3整除的值
@@ -378,7 +378,7 @@ print([b+'+'+g for b in boys for g in letterGirls[b[0]]])
 squares = {i:"{} squared is {}".format(i, i**2) for i in range(100)}
 print(squares[99])
 
-# 三人行
+# ------------- 三人行 -------------
 ##pass什么都不做
 #错误示范，其中一个elif未完成，在执行时中会发生错误，导致程序无法运行
 # if name == 'Ralph Auldus Melish':
